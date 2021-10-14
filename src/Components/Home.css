@@ -1,0 +1,16 @@
+.home-div {
+    padding: 7% 13% 2% 13% !important;
+}
+
+.home-img-div {
+    padding: 4%;
+}
+
+#home-img {
+    width: 100%;
+    height: auto;
+}
+
+.home-info-div {
+    text-align: right;
+}

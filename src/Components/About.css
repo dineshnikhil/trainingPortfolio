@@ -1,0 +1,49 @@
+.about-div {
+    padding: 7% 13% 2% 13% !important;
+}
+
+.about-img-div {
+    padding: 4%;
+}
+
+.about-img-div img {
+    width: 100%;
+    height: auto;
+}
+
+.about-info-div {
+    padding: 3%;
+}
+
+.about-info-div h4 {
+    margin-top: 4.7%;
+}
+
+.about-info-div h5 {
+    color: #495057 !important;
+}
+
+.speciality-type {
+    padding: 1% 2.2%;
+    margin: 5% 2% !important;
+    background-color: #dee2e6;
+    color: #495057;
+
+    border-radius: 5px;
+}
+
+.speciality-type:hover {
+    cursor: pointer;
+}
+
+.enrol-btn {
+    display: block;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    background-color: #0466c8 !important;
+
+    margin: 8% 2%;
+}
+

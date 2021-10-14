@@ -1,0 +1,66 @@
+.training-div {
+    padding: 3% 13% 2% 13% !important;
+}
+
+.card {
+    border: 0;
+
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.online-training-div {
+    margin: 5% 0%;
+    background-color: #e9ecef;
+
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.online-training-info-div {
+    padding: 4.2% 5%;
+}
+
+.online-training-info-div h5 {
+    color: #495057;
+}
+
+#online-training-book-btn {
+    display: block;
+    width: 30%;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    margin-top: 1%;
+
+    background-color: #0466c8 !important;
+    color: white !important;
+}
+
+.online-training-img-div{
+    padding: 1% 8%;
+}
+
+#online-training-img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+}
+
+.card-body button {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+
+    background-color: #0466c8;
+}
+

@@ -1,0 +1,37 @@
+.contact-div {
+    padding: 10% 13% 3% 13% !important;
+}
+
+.contact-img-div {
+    padding: 3% 7%;
+}
+
+.contact-form-div {
+    padding: 5.4% 7%;
+}
+
+#contact-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.contact-form-div button {
+    width: 100%;
+    background-color: #0466c8;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin: 5.4% 0;
+}
+
+textarea {
+    border: 2px solid #0466c8;
+    border-radius: 6px;
+    padding: 1% 2.5%;
+    width: 100%;
+
+    margin: 3% 0;
+}

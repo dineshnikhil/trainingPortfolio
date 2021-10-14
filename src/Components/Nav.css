@@ -1,0 +1,24 @@
+.navbar {
+    background-color: white !important;
+
+    padding: 0.8% 4% !important;
+
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+    color: #0466c8 !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hire-btn {
+    width: auto;
+    background-color: #0466c8;
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin: 0 1%;
+}
