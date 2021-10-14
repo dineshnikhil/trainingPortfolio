@@ -12,5 +12,59 @@
 }
 
 .home-info-div {
-    text-align: right;
+    text-align: left;
+    padding: 10% 3%;
+}
+
+.home-info-div h1 {
+    font-size: 2rem;
+}
+
+.home-info-div h4 {
+    font-size: 1.2rem;
+    color: #495057;
+
+    margin-top: 5%;
+}
+
+.learn-btn {
+    display: block;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    background-color: #0466c8 !important;
+
+    margin: 8% 2%;
+}
+
+/* ====================== for tablet version user interface ================= */
+@media (min-width :768px) and (max-width: 992px) {
+
+    .home-div {
+        padding: 7% 9% 2% 9% !important;
+    }
+
+
+    .home-info-div h1 {
+        font-size: 1.7rem;
+    }
+    
+    .home-info-div h4 {
+        font-size: 1rem;
+        color: #495057;
+    
+        margin-top: 5%;
+    }
+    
+    .learn-btn {
+        display: block;
+        width: 50%;
+        font-size: 1rem;
+        font-weight: bold;
+    
+        background-color: #0466c8 !important;
+    
+        margin: 8% 2%;
+    }
 }

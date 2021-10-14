@@ -24,8 +24,16 @@ function TrainingTypeComp(props) {
     function onsubmitHandler(event) {
         event.preventDefault();
 
-        alert(`Thanks ${enteredName.toUpperCase()} for Enroling, We will get in touch with in 24 hours.`);
-        props.onConfirm();
+        if (enteredName === "") {
+            alert("Please fill Name input Field!")
+        } else if (enteredEmail === "") {
+            alert('Please fill Email input Field!')
+        } else if (enteredGender === "") {
+            alert('Please fill Gender input Field!')
+        } else {
+            alert(`Thanks ${enteredName.toUpperCase()} for Enroling, We will get in touch with in 24 hours.`);
+            props.onConfirm();
+        }
 
     }
     return (

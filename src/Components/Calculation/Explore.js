@@ -97,6 +97,12 @@ function Explore() {
 
             // ========================================================
 
+
+            setWeight('');
+            setGender('');
+            setHeight('');
+            setAge('');
+
         } else {
 
             alert("Check your weight, height, age fields again!");
@@ -110,25 +116,25 @@ function Explore() {
         <div className="container-fluid explore-div" id="explore">
             <h2>Calculate Your <span>BMI</span> AND <span>BMR</span>!</h2>
             <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 col-md-6 explore-form-div">
                     <form onSubmit={onSubmitHandler}>
 
                         {/* asking weight */}
                         <label htmlFor="weight">Weight (kg)</label>
-                        <input type="number" id="weight" name="weight" onChange={weightChangeHandler} />
+                        <input value={weight} type="number" id="weight" name="weight" onChange={weightChangeHandler} />
                         
 
                         {/* asking height */}
                         <label htmlFor="height">Height (Meters)</label>
-                        <input type="float" id="height" name="height" onChange={heightChangeHandler} />
+                        <input value={height} type="float" id="height" name="height" onChange={heightChangeHandler} />
                         
 
-                        {/* asking height */}
+                        {/* asking age */}
                         <label htmlFor="age">Age (Year)</label>
-                        <input type="number" id="age" name="age" onChange={ageChangeHandler} />
+                        <input value={age} type="number" id="age" name="age" onChange={ageChangeHandler} />
                         
                         
-                        <select name="gender" id="gender" onChange={genderChangeHandler}>
+                        <select value={gender} name="gender" id="gender" onChange={genderChangeHandler}>
                             <option value="">Choose your Gender..</option>
                             <option value="male">male</option>
                             <option value="female">female</option>
@@ -138,7 +144,7 @@ function Explore() {
                         <button type="submit" className="btn btn-primary" id="cal-btn">Calculate <i class="fas fa-calculator"></i></button>
                     </form>
                 </div>
-                <div className="col-lg-4 result-div">
+                <div className="col-lg-4 col-md-6 result-div">
                     <h5>BMI <i class="fas fa-weight"></i></h5>
                     <p><span>{bmi}</span> ({bmiMsg})</p>
                     <h5>BMR <i class="fas fa-fire"></i></h5>
