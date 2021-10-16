@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ReactDom from 'react-dom';
+import swal from 'sweetalert';
+
 
 import './OnlineTrainingModal.css'
 
@@ -45,7 +47,8 @@ const ModalOverlay = (props) => {
 
         // form validateion.
         if (enteredName === "") {
-            alert("Please fill Name!");
+            // alert("Please fill Name!");
+            swal("Input field not filled", "check your name field!", "warning")
         } else if (enteredEmail === "") {
             alert("Please fill Email!")
         } else if (enteredGender === "") {
@@ -74,7 +77,7 @@ const ModalOverlay = (props) => {
             <h3>Book Your Free One Hour Online training</h3>
             <form onSubmit={onsubmitHandler}>
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6">
                         <label htmlFor="name">Name</label>
                         <input onChange={nameChangeHandler} id="name" name="name" type="text" />
 
@@ -87,7 +90,7 @@ const ModalOverlay = (props) => {
                             <option value="female">female</option>
                         </select>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6">
                         <select onChange={trainingTypeChangedHandler} name="training-type" id="training-type">
                             <option value="">Choose training type...</option>
                             <option value="Fat loss training">Fat loss training</option>

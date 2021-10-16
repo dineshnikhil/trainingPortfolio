@@ -49,7 +49,7 @@ function Training() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 col-md-4">
+                    <div className="col-lg-4 col-md-4 card-div">
 
                         <div class="card">
                             <img src={strength} class="card-img-top" alt="" />
@@ -61,7 +61,7 @@ function Training() {
                         </div>
 
                     </div>
-                    <div className="col-lg-4 col-md-4">
+                    <div className="col-lg-4 col-md-4 card-div" >
 
                         <div class="card">
                             <img src={crossfit} class="card-img-top" alt="" />
@@ -73,7 +73,7 @@ function Training() {
                         </div>
                         
                     </div>
-                    <div className="col-lg-4 col-md-4">
+                    <div className="col-lg-4 col-md-4 card-div">
                         <div class="card">
                             <img src={cardio} class="card-img-top" alt="" />
                             <div class="card-body">

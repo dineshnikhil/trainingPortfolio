@@ -110,3 +110,26 @@ select {
     }
 
 }
+
+
+/* ====================== for mobile version user interface ================= */
+@media (min-width :320px) and (max-width: 425px) {
+
+    .explore-div {
+        padding: 21% 6% 6.5% 6% !important;
+    }
+
+    .explore-form-div {
+        padding: 5% 3%;
+    }
+
+    .training-recommend-div a {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #0466c8;
+    }
+
+}

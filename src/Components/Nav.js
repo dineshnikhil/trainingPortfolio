@@ -21,24 +21,24 @@ function Nav() {
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#home">Fitzz</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-grip-lines"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                <a class="nav-link js-scroll-trigger" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#about">About</a>
+                                <a class="nav-link js-scroll-trigger" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#training">Training</a>
+                                <a class="nav-link js-scroll-trigger" href="#training">Training</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#contact">Contact</a>
+                                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#explore">Explore</a>
+                                <a class="nav-link js-scroll-trigger" href="#explore">Explore</a>
                             </li>
                             <li class="nav-item">
                                 <button class="btn btn-primary hire-btn" onClick={hireNowHandler}>HireNow</button>

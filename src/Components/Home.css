@@ -68,3 +68,38 @@
         margin: 8% 2%;
     }
 }
+
+/* ====================== for mobile version user interface ================= */
+@media (min-width :320px) and (max-width: 425px) {
+
+    .home-div {
+        padding: 12% 6% 2% 6% !important;
+    }
+
+    .home-img-div {
+        padding: 10%;
+    }
+
+    .home-info-div h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-info-div h4 {
+        font-size: .9rem;
+        color: #495057;
+    
+        margin-top: 5%;
+    }
+
+    .learn-btn {
+        display: block;
+        width: 60%;
+        font-size: 1rem;
+        font-weight: bold;
+    
+        background-color: #0466c8 !important;
+    
+        margin: 8% 2% 0% 2%;
+    }
+
+}

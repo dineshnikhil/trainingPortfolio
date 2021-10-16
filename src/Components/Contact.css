@@ -52,3 +52,20 @@ textarea {
     }
 
 }
+
+/* ====================== for mobile version user interface ================= */
+@media (min-width :320px) and (max-width: 425px) {
+
+    .contact-div {
+        padding: 17% 6% 3% 6% !important;
+    }
+
+    .contact-img-div {
+        padding: 3% 8%;
+    }
+
+    .contact-form-div button {
+        font-size: 1rem;
+    }
+
+}

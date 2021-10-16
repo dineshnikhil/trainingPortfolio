@@ -60,3 +60,24 @@
     }
 
 }
+
+
+/* ====================== for tablet version user interface ================= */
+@media (min-width :320px) and (max-width: 425px) {
+
+    .footer-explore-img-div {
+        padding: 5%;
+        text-align: left;
+    }
+
+    .footer-explore-info-div {
+        text-align: left;
+        color: #495057;
+    }
+
+    #world-map {
+        width: 80%;
+        height: auto;
+    }
+
+}

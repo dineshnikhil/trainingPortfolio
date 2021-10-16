@@ -16,10 +16,10 @@ function Footer() {
                 </div>
                 <div className="col-lg-6 col-md-6 footer-explore-div">
                     <div className="row">
-                        <div className="col-lg-6 col-md-6 footer-explore-img-div">
+                        <div className="col-6 footer-explore-img-div">
                             <img src={worldImg} alt="" id="world-map" />
                         </div>
-                        <div className="col-lg-6 col-md-6 footer-explore-info-div">
+                        <div className="col-6 footer-explore-info-div">
                             <h4>Explore</h4>
                             <ul>
                                 <li><a href="#home">Home</a></li>
@@ -32,8 +32,8 @@ function Footer() {
                 </div>
             </div>
             <div className="copyrights">
-                <p>Copyright Fitzz. All Rights Reserved</p>
-                <p>Designed By DineshNikhil</p>
+                <p><span>&#169;</span> Copyright Fitzz. All Rights Reserved</p>
+                <p>Designed By dn9</p>
             </div>
         </div>
     )

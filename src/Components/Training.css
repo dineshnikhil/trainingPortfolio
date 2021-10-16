@@ -100,3 +100,52 @@
 
 }
 
+
+/* ====================== for mobile version user interface ================= */
+@media (min-width :320px) and (max-width: 425px) {
+
+    .training-div {
+        padding: 17% 6% 2% 6% !important;
+    }
+
+    .card {
+        width: 16rem;
+    }
+
+    .card p {
+        font-size: .9rem;
+    }
+
+    .card-body button {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    
+        background-color: #0466c8;
+    }
+
+    .card-div {
+        padding: 5%;
+    }
+
+    .online-training-img-div{
+        padding: 0;
+    }
+
+    .online-training-info-div h5 {
+        color: #495057;
+        font-size: .9rem;
+    }
+
+    .online-training-info-div h3 {
+        font-size: 1rem;
+    }
+
+    #online-training-book-btn {
+        font-size: 1rem;
+        width: 90%;
+     }
+
+}
+
