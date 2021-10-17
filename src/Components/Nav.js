@@ -49,7 +49,7 @@ function Nav() {
                         <a href="#explore">Explore</a>
                     </li>
                     <li>
-                        <button className="hire-btn" onClick={hireNowHandler}>Hire</button>
+                        <button className="hire-btn" onClick={hireNowHandler}>Hire <i class="fas fa-dumbbell"></i></button>
                     </li>
                 </ul>
 

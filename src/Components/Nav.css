@@ -41,8 +41,8 @@ li {
 }
 
 .hire-btn {
-    width: 30%;
-    font-size: 1.2rem;
+    width: 40%;
+    font-size: 1rem;
     font-weight: bold;
     color: white;
 
@@ -50,6 +50,7 @@ li {
     border: none;
 
     width: 100%;
+    padding: 2% 3%;
 
     background-color: #0466c8 !important;
 }
