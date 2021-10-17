@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Explore.css'
+import swal from 'sweetalert';
 
 import personalTraining from '../../Images/Personal Trainer.svg'
 import cardio from '../../Images/cardio-img.png'
@@ -41,7 +42,7 @@ function Explore() {
         event.preventDefault();
 
         // validating the form.
-        if (weight != '' && height != '' && age != '') {
+        if (weight !== '' && height !== '' && age !== '') {
 
             // ================ calulating the bmi ===========
 
@@ -74,7 +75,7 @@ function Explore() {
                 calbmr = 447.593 + (9.247 * +weight) + (3.098 * (+height * 100)) - (4.330 * +age);
                 setBmr(calbmr.toFixed(0));
             } else {
-                alert("Please select your Gender!")
+                swal("Input field error", "Please select your Gender!", "warning")
             }
 
             // ======================================================
@@ -105,7 +106,7 @@ function Explore() {
 
         } else {
 
-            alert("Check your weight, height, age fields again!");
+            swal("Input field error", "Check your weight, height, age fields again!", "warning");
 
         }
     }

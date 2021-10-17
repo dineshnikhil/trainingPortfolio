@@ -1,10 +1,20 @@
 import React, { useState } from 'react'
 import './Nav.css'
 import HireModal from './Ui/HireModal';
+import NavModal from './Ui/NavModal';
 
 function Nav() {
 
     const [price, setprice] = useState(false);
+    const [navToggle, setNavToggle] = useState(false);
+
+    const navShow = () => {
+        setNavToggle(true);
+    }
+
+    const navHide =  () => {
+        setNavToggle(false);
+    }
 
     const hireNowHandler = () => {
         setprice(true)
@@ -14,38 +24,36 @@ function Nav() {
         setprice(false)
     }
 
+
     return (
         <div>
             {price && <HireModal onConfirm={hireLaterHandler} />}
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#home">Fitzz</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-grip-lines"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#training">Training</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#explore">Explore</a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="btn btn-primary hire-btn" onClick={hireNowHandler}>HireNow</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            {navToggle && <NavModal onConfirm={navHide} />}
+            <nav>
+                <a href="/" className="nav-brand">Fitzz</a>
+                
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#training">Training</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#explore">Explore</a>
+                    </li>
+                    <li>
+                        <button className="hire-btn" onClick={hireNowHandler}>Hire</button>
+                    </li>
+                </ul>
+
+                <button onClick={navShow} class="nav-toggler"><i class="fas fa-grip-lines"></i></button>
             </nav>
         </div>
     )

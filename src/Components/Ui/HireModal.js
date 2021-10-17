@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDom from 'react-dom';
 import './HireModal.css';
+import swal from 'sweetalert';
 
 
 const Backdrop = (props) => {
@@ -37,14 +38,14 @@ const ModalOverlay = (props) => {
         event.preventDefault();
 
         if (enteredEmail !== "" && enteredName !== "" && enteredGender !== "" && trainingType !== "") {
-            alert(`Thanks ${enteredName}! for Hiring.`);
+            swal("", "Successfully Hired!", "success");
             props.onConfirm();
             setenteredName('');
             setenteredEmail('');
             setenteredGender('');
             settrainingType('');
         } else {
-            alert("Please check your input fields Again! (name, email, gender, trainingType)")
+            swal("Input Field Error", "Please check your input fields Again! (name, email, gender, trainingType)", "warning")
         }
 
         

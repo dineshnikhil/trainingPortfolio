@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import swal from 'sweetalert';
 
 import './TrainingTypeComp.css'
 
@@ -25,13 +26,13 @@ function TrainingTypeComp(props) {
         event.preventDefault();
 
         if (enteredName === "") {
-            alert("Please fill Name input Field!")
+            swal("Input field Error", "Please fill Name input Field!", "warning")
         } else if (enteredEmail === "") {
-            alert('Please fill Email input Field!')
+            swal("Input field Error", "Please fill Email input Field!", "warning")
         } else if (enteredGender === "") {
-            alert('Please fill Gender input Field!')
+            swal("Input field Error", "Please fill Gender input Field!", "warning")
         } else {
-            alert(`Thanks ${enteredName.toUpperCase()} for Enroling, We will get in touch with in 24 hours.`);
+            swal("", "Thanks for Enroling, We will get in touch with in 24 hours.", "success");
             props.onConfirm();
         }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import formImg from '../Images/form-img.png'
+import swal from 'sweetalert';
 
 import './Contact.css'
 
@@ -26,15 +27,15 @@ function Contact() {
     function onSubmitChangeHandler(event) {
         event.preventDefault();
 
-        if (name != '' && email != '' && query != '') {
+        if (name !== '' && email !== '' && query !== '') {
 
-            alert(`Thanks ${name} for your Query, We will Back with in 24 hours with response!`);
+            swal("", `Thanks ${name} for your Query, We will Back with in 24 hours with response!`, "success");
             setName('');
             setQuery('');
             setEmail('');
 
         } else {
-            alert("Check name, email and query fields! (not be empty)");
+            swal("Input field error", "Check name, email and query fields! (not be empty)", "warning");
         }
 
         

@@ -50,17 +50,17 @@ const ModalOverlay = (props) => {
             // alert("Please fill Name!");
             swal("Input field not filled", "check your name field!", "warning")
         } else if (enteredEmail === "") {
-            alert("Please fill Email!")
+            swal("Input field not filled", "Please fill Email!", "warning")
         } else if (enteredGender === "") {
-            alert("Please select your Gender!")
+            swal("Input field not filled", "Please select your Gender!", "warning")
         } else if (enteredTrainingType === "") {
-            alert("Please select Training Type!")
+            swal("Input field not filled", "Please select Training Type!", "warning")
         } else if (enteredDate === "") {
-            alert("Please select date!")
+            swal("Input field not filled", "Please select date!", "warning")
         } else if (enteredTime === "") {
-            alert("Please select Time!")
+            swal("Input field not filled", "Please select Time!", "warning")
         } else {
-            alert("Successfully Booked Your Online Session!");
+            swal("", "Successfully Booked Your Online Session!", "success");
             props.onConfirm();
             console.log({
                 name: enteredName,
