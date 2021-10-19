@@ -1,51 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ReactDom from 'react-dom';
 import './HireModal.css';
 import swal from 'sweetalert';
-
-
-const Backdrop = (props) => {
-    return (
-        <div className="backdrop" onClick={props.onConfirm}></div>
-    )
-};
+import Backdrop from './Backdrop';
 
 const ModalOverlay = (props) => {
 
-    // variables..
-    const [enteredName, setenteredName] = useState('');
-    const [enteredEmail, setenteredEmail] = useState('');
-    const [enteredGender, setenteredGender] = useState('');
-    const [trainingType, settrainingType] = useState('');
-
-    function nameChangeHandler(event) {
-        setenteredName(event.target.value);
-    }
-    function emailChangedHandler(event) {
-        setenteredEmail(event.target.value);
-    }
-
-    function genderChangeHandler(event) {
-        setenteredGender(event.target.value);
-    }
-
-    function trainingtypeChangeHandler(event) {
-        settrainingType(event.target.value)
-    }
+    const nameInputRef = useRef();
+    const emailInputRef = useRef();
+    const genderInputRef = useRef();
+    const trainingTypeInputRef = useRef();
 
 
     function onSubmitHandler(event) {
         event.preventDefault();
 
-        if (enteredEmail !== "" && enteredName !== "" && enteredGender !== "" && trainingType !== "") {
+        const enteredName = nameInputRef.current.value;
+        const enteredEmail = emailInputRef.current.value;
+        const enteredGender = genderInputRef.current.value;
+        const enteredTrainingType = trainingTypeInputRef.current.value;
+
+        // console.log({
+        //     name: enteredName,
+        //     email: enteredEmail,
+        //     gender: enteredGender,
+        //     trainingType: enteredTrainingType
+        // });
+
+        if (enteredEmail !== "" && enteredName !== "" && enteredGender !== "" && enteredTrainingType !== "") {
+
             swal("", "Successfully Hired!", "success");
             props.onConfirm();
-            setenteredName('');
-            setenteredEmail('');
-            setenteredGender('');
-            settrainingType('');
+
         } else {
+
             swal("Input Field Error", "Please check your input fields Again! (name, email, gender, trainingType)", "warning")
+
         }
 
         
@@ -54,21 +44,32 @@ const ModalOverlay = (props) => {
     return (
         <div className="price-modal-div">
             <form onSubmit={onSubmitHandler}>
+
                 <label htmlFor="name">Name</label>
-                <input onChange={nameChangeHandler} id="name" name="name" type="text" />
+                <input 
+                    id="name" 
+                    name="name" 
+                    type="text"
+                    ref={nameInputRef} 
+                />
                 
 
                 <label htmlFor="email">Email</label>
-                <input onChange={emailChangedHandler} id="email" name="email" type="email" />
+                <input 
+                    id="email" 
+                    name="email" 
+                    type="email"
+                    ref={emailInputRef}
+                />
                 
 
-                <select onChange={genderChangeHandler} name="gender" id="gender">
+                <select name="gender" id="gender" ref={genderInputRef}>
                     <option value="">Choose your Gender..</option>
                     <option value="male">male</option>
                     <option value="female">female</option>
                 </select>
             
-                <select onChange={trainingtypeChangeHandler} name="training-type" id="training-type">
+                <select ref={trainingTypeInputRef} name="training-type" id="training-type">
                     <option value="">Choose training type...</option>
                     <option value="Fat loss training">Fat loss training</option>
                     <option value="Strength training">Strength training</option>
@@ -77,7 +78,13 @@ const ModalOverlay = (props) => {
                 </select>
                 
 
-                <button type="submit" className="btn btn-primary" id="price-modal-div-hire-btn">Hire <i class="fas fa-dumbbell"></i></button>
+                <button 
+                    type="submit" 
+                    className="btn btn-primary" 
+                    id="price-modal-div-hire-btn"
+                >
+                    Hire <i class="fas fa-dumbbell"></i>
+                </button>
             </form>
             <button onClick={props.onConfirm} class="cross"><i class="fas fa-times"></i></button>
         </div>

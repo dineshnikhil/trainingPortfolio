@@ -1,13 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import Backdrop from './Backdrop';
 
 import './NavModal.css';
 
-const Backdrop = (props) => {
-    return (
-        <div className="backdrop" onClick={props.onConfirm}></div>
-    )
-};
 
 const NavigationModal = (props) => {
     return (

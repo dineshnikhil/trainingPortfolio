@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import formImg from '../Images/form-img.png'
 import swal from 'sweetalert';
 
@@ -10,6 +10,13 @@ function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [query, setQuery] = useState('');
+    const [formIsValid, setFormIsValid] = useState(false);
+
+    useEffect(() => {
+        
+        setFormIsValid(name !== '' && email !== '')
+
+    }, [name, email]);
 
     function nameChangeHandler(event) {
         setName(event.target.value);
@@ -57,7 +64,7 @@ function Contact() {
 
                         <textarea onChange={queryChangeHandler} value={query} name="query" id="query" placeholder="write your query here..."></textarea>
 
-                        <button className="btn btn-primary" type="submit">Send <i class="far fa-paper-plane"></i></button>
+                        <button disabled={!formIsValid} className="btn btn-primary" type="submit">Send <i class="far fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
