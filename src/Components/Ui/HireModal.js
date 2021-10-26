@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import ReactDom from 'react-dom';
 import './HireModal.css';
 import swal from 'sweetalert';

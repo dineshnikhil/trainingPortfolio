@@ -1,0 +1,44 @@
+.firstVist-modal-div {
+	position: fixed;
+	top: 10vh;
+	left: 10vw;
+	width: 80%;
+	height: auto;
+
+	margin: 0 auto;
+
+	background-color: white;
+	border-radius: 10px;
+
+	padding: 2% 7%;
+	z-index: 1310;
+
+	transition: visibility 0s, opacity 1s linear;
+}
+
+.firstVist-modal-img-div img {
+	width: 100%;
+	height: auto;
+}
+
+.firstVist-modal-info-div {
+	padding: 4%;
+}
+
+.firstVist-modal-info-div h2 {
+	text-align: center;
+	margin: 4% auto;
+}
+
+.firstVist-modal-info-div p {
+	font-weight: bold;
+	color: #495057;
+	margin: 7% auto;
+}
+
+.firstVist-modal-info-div i {
+	font-size: 1.7rem;
+	color: #0466c8;
+
+	margin: 4% 4%;
+}
