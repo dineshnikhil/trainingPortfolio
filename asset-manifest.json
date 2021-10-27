@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/trainingPortfolio/static/css/main.320ede0d.chunk.css",
-    "main.js": "/trainingPortfolio/static/js/main.54093449.chunk.js",
-    "main.js.map": "/trainingPortfolio/static/js/main.54093449.chunk.js.map",
+    "main.css": "/trainingPortfolio/static/css/main.0c7158e5.chunk.css",
+    "main.js": "/trainingPortfolio/static/js/main.61103946.chunk.js",
+    "main.js.map": "/trainingPortfolio/static/js/main.61103946.chunk.js.map",
     "runtime-main.js": "/trainingPortfolio/static/js/runtime-main.2da4097f.js",
     "runtime-main.js.map": "/trainingPortfolio/static/js/runtime-main.2da4097f.js.map",
     "static/js/2.05b3a2e8.chunk.js": "/trainingPortfolio/static/js/2.05b3a2e8.chunk.js",
     "static/js/2.05b3a2e8.chunk.js.map": "/trainingPortfolio/static/js/2.05b3a2e8.chunk.js.map",
     "index.html": "/trainingPortfolio/index.html",
-    "static/css/main.320ede0d.chunk.css.map": "/trainingPortfolio/static/css/main.320ede0d.chunk.css.map",
+    "static/css/main.0c7158e5.chunk.css.map": "/trainingPortfolio/static/css/main.0c7158e5.chunk.css.map",
     "static/js/2.05b3a2e8.chunk.js.LICENSE.txt": "/trainingPortfolio/static/js/2.05b3a2e8.chunk.js.LICENSE.txt",
     "static/media/Personal Trainer.7a883a5b.svg": "/trainingPortfolio/static/media/Personal Trainer.7a883a5b.svg",
+    "static/media/Working-from-anywhere.04c9ba89.gif": "/trainingPortfolio/static/media/Working-from-anywhere.04c9ba89.gif",
     "static/media/about-img.cd70af2b.png": "/trainingPortfolio/static/media/about-img.cd70af2b.png",
     "static/media/cardio-img.e61162b8.png": "/trainingPortfolio/static/media/cardio-img.e61162b8.png",
     "static/media/crossfit-img.ae61959b.png": "/trainingPortfolio/static/media/crossfit-img.ae61959b.png",
@@ -23,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.2da4097f.js",
     "static/js/2.05b3a2e8.chunk.js",
-    "static/css/main.320ede0d.chunk.css",
-    "static/js/main.54093449.chunk.js"
+    "static/css/main.0c7158e5.chunk.css",
+    "static/js/main.61103946.chunk.js"
   ]
 }
