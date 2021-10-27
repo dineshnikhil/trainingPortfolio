@@ -34,19 +34,19 @@ function Nav() {
                 
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <a className="scrollto active" href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a className="scrollto" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#training">Training</a>
+                        <a className="scrollto" href="#training">Training</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a className="scrollto" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#explore">Explore</a>
+                        <a className="scrollto" href="#explore">Explore</a>
                     </li>
                     <li>
                         <button className="hire-btn" onClick={hireNowHandler}>Hire <i class="fas fa-dumbbell"></i></button>

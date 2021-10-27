@@ -117,7 +117,7 @@ function Explore() {
         <div className="container-fluid explore-div" id="explore">
             <h2>Calculate Your <span>BMI</span> AND <span>BMR</span>!</h2>
             <div className="row">
-                <div className="col-lg-4 col-md-6 explore-form-div">
+                <div className="col-lg-4 col-md-6 explore-form-div" data-aos="fade-up">
                     <form onSubmit={onSubmitHandler}>
 
                         {/* asking weight */}
@@ -145,13 +145,13 @@ function Explore() {
                         <button type="submit" className="btn btn-primary" id="cal-btn">Calculate <i class="fas fa-calculator"></i></button>
                     </form>
                 </div>
-                <div className="col-lg-4 col-md-6 result-div">
+                <div className="col-lg-4 col-md-6 result-div" data-aos="fade-up" data-aos-delay="300">
                     <h5>BMI <i class="fas fa-weight"></i></h5>
                     <p><span>{bmi}</span> ({bmiMsg})</p>
                     <h5>BMR <i class="fas fa-fire"></i></h5>
                     <p><span>{bmr}</span> (calories you burn Daily!)</p>
                 </div>
-                <div className="col-lg-4 training-recommend-div">
+                <div className="col-lg-4 training-recommend-div" data-aos="fade-up" data-aos-delay="600">
                     <h4>Recommended Training is</h4>
                     <img src={imgUrl} alt='' />
                     <h5>{recTraining}</h5>

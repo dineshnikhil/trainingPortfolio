@@ -51,10 +51,10 @@ function Contact() {
     return (
         <div className="container-fluid contact-div" id="contact">
             <div className="row">
-                <div className="col-lg-6 col-md-6 contact-img-div">
+                <div className="col-lg-6 col-md-6 contact-img-div" data-aos="fade-up">
                     <img src={formImg} id="contact-img" alt="" />
                 </div>
-                <div className="col-lg-6 col-md-6 contact-form-div">
+                <div className="col-lg-6 col-md-6 contact-form-div" data-aos="fade-up" data-aos-delay="300">
                     <form onSubmit={onSubmitChangeHandler}>
                         <label for="name">Name</label>
                         <input onChange={nameChangeHandler} value={name} type="text" id="name" />

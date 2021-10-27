@@ -36,7 +36,7 @@ function Training() {
             {bookToogle && <OnlineTrainingModal onConfirm={bookLater} />}
             {enrolBtnToogle && <TrainingTypeModal onConfirm={enrolLater} trainingType={trainingTypeClicked} />}
             <div className="container-fluid training-div" id="training">
-                <div className="container-fluid online-training-div">
+                <div className="container-fluid online-training-div" data-aos="fade-up">
                     <div className="row">
                         <div className="col-8 online-training-info-div">
                             <h3>We are Training Online</h3>
@@ -49,7 +49,7 @@ function Training() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 col-md-4 card-div">
+                    <div className="col-lg-4 col-md-4 card-div" data-aos="fade-right" data-aos-offset="120">
 
                         <div class="card">
                             <img src={strength} class="card-img-top" alt="" />
@@ -61,7 +61,7 @@ function Training() {
                         </div>
 
                     </div>
-                    <div className="col-lg-4 col-md-4 card-div" >
+                    <div className="col-lg-4 col-md-4 card-div" data-aos="fade-up" data-aos-offset="120">
 
                         <div class="card">
                             <img src={crossfit} class="card-img-top" alt="" />
@@ -73,7 +73,7 @@ function Training() {
                         </div>
                         
                     </div>
-                    <div className="col-lg-4 col-md-4 card-div">
+                    <div className="col-lg-4 col-md-4 card-div" data-aos="fade-left" data-aos-offset="120">
                         <div class="card">
                             <img src={cardio} class="card-img-top" alt="" />
                             <div class="card-body">
